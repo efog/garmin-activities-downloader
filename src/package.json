@@ -1,0 +1,31 @@
+{
+  "name": "garmin-activities-downloader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "co": "4",
+    "commander": "^6.1.0",
+    "debug": "^4.1.1",
+    "garmin-api-handler": "4.4.6",
+    "garmin-connect-scraper": "^1.1.1",
+    "node-fetch": "^2.6.1",
+    "prompt-promise": "^1.0.3",
+    "request": "^2.88.2",
+    "xml2js": "^0.4.23"
+  },
+  "devDependencies": {
+    "ava": "^3.12.1",
+    "eslint": "^7.9.0",
+    "eslint-plugin-ava": "^11.0.0"
+  },
+  "eslintConfig": {
+    "extends": "plugin:ava/recommended"
+  }
+}

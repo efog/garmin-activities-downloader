@@ -1,0 +1,22 @@
+{
+    "general": {
+        "requestDelay": 3000,
+        "defaultPickPolicy": "notNull",
+        "baseDir": "{homeDir}/"
+    },
+    "activities": {
+        "search": {
+            "parameters": {
+                "activityType": "running"
+            },
+            "path": "{baseDir}/running/index.json",
+            "limit": 4000
+        },
+        "fetch": [
+            {
+                "url": "https://connect.garmin.com/modern/proxy/activity-service/activity/{activityId}",
+                "path": "{baseDir}/running/activity/{activityId}.json"
+            }
+        ]
+    }
+}
